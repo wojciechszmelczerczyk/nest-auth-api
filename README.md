@@ -24,6 +24,7 @@ Simple REST API for user authentication.
 | Method |              Endpoint              |
 | :----: | :--------------------------------: |
 |  POST  | [`/auth/signup`](./docs/signup.md) |
+|  POST  | [`/auth/signin`](./docs/signin.md) |
 
 ## To run
 

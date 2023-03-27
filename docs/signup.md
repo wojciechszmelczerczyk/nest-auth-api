@@ -13,7 +13,7 @@ Sign up user.
 ```json
 {
   "email": "[email type string]",
-  "password": "[string]"
+  "password": "[string 6-20 characters]"
 }
 ```
 
@@ -55,6 +55,18 @@ Condition: If provided email is not an email.
 {
   "error": "Bad Request",
   "message": ["email must be an email"],
+  "statusCode": 400
+}
+```
+
+Code: `400 BAD REQUEST`
+
+Condition: If user with provided email already exists.
+
+```json
+{
+  "error": "Unauthorized",
+  "message": "User with provided email already exists",
   "statusCode": 400
 }
 ```
