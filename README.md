@@ -18,6 +18,7 @@ Simple REST API for user authentication.
 ## Prerequisities
 
 - `Node.js`
+- `MongoDB`
 
 ## Endpoints
 
@@ -38,6 +39,8 @@ Create `.env` file in project root directory and populate with your config.
 
 ```docker
 DB_URI=
+
+JWT_SECRET=
 ```
 
 Run API in development mode.

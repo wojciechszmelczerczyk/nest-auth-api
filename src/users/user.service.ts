@@ -63,6 +63,6 @@ export class UserService {
     );
 
     // response with jsonwebtoken
-    return { jwt };
+    return { jwt, email: user.email };
   }
 }
