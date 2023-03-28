@@ -39,7 +39,7 @@ API returns jsonwebtoken and user email.
 ```json
 {
   "jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ind3d3dAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ0ZXN0MTIzNCIsImlhdCI6MTY3OTkyODQyMH0.AAY8RpVOJMycz6PBsy_VYwLTvWod5RjCScC3QVoLhMI",
-  "email": "www@gmail.com"
+  "email": "user@gmail.com"
 }
 ```
 

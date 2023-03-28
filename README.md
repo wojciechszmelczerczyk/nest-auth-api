@@ -8,6 +8,7 @@ Simple REST API for user authentication.
 
 - [Techstack](#techstack)
 - [Prerequisities](#prerequisities)
+- [Architecture](#architecture)
 - [Endpoints](#endpoints)
 - [To run](#to-run)
 
@@ -20,12 +21,26 @@ Simple REST API for user authentication.
 - `Node.js`
 - `MongoDB`
 
+## Architecture
+
+Application use `REST` style architecture.
+`Client` side is created in `React.js` <br/>
+`Server` side is created in `Nest.js`
+Application use `MongoDB` atlas cloud.
+
+<details>
+
+<summary>Example</summary>
+
+<img src="./.github/img/app-arch.png">
+</details>
+
 ## Endpoints
 
 | Method |              Endpoint              |
 | :----: | :--------------------------------: |
-|  POST  | [`/auth/signup`](./docs/signup.md) |
-|  POST  | [`/auth/signin`](./docs/signin.md) |
+| `POST` | [`/auth/signup`](./docs/signup.md) |
+| `POST` | [`/auth/signin`](./docs/signin.md) |
 
 ## To run
 
