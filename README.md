@@ -9,6 +9,7 @@ Simple REST API for user authentication.
 - [Techstack](#techstack)
 - [Prerequisities](#prerequisities)
 - [Architecture](#architecture)
+- [Postman](#postman)
 - [Endpoints](#endpoints)
 - [To run](#to-run)
 
@@ -34,6 +35,10 @@ Application use `MongoDB` atlas cloud.
 
 <img src="./.github/img/app-arch.png">
 </details>
+
+## Postman
+
+You can play with API just import provided [Postman file](./auth-api.postman_collection.json) in Postman client.
 
 ## Endpoints
 
