@@ -51,7 +51,7 @@ Condition: If user with provided email doesn't exists.
 
 ```json
 {
-  "error": "Unauthorized",
+  "error": "Bad Request",
   "message": "Could not find the user with provided email",
   "statusCode": 400
 }
@@ -63,7 +63,7 @@ Condition: If provided password is incorrect.
 
 ```json
 {
-  "error": "Unauthorized",
+  "error": "Bad Request",
   "message": "Incorrect password",
   "statusCode": 400
 }

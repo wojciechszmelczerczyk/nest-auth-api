@@ -65,7 +65,7 @@ Condition: If user with provided email already exists.
 
 ```json
 {
-  "error": "Unauthorized",
+  "error": "Bad Request",
   "message": "User with provided email already exists",
   "statusCode": 400
 }
