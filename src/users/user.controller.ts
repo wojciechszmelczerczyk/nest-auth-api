@@ -7,7 +7,6 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Post('/signup')
-  // @UseInterceptors(new TransformInterceptor())
   signup(@Body(new ValidationPipe()) createUserDto: CreateUserDto) {
     return this.userService.signup(createUserDto);
   }
