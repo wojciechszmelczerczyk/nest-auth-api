@@ -41,8 +41,8 @@ Application use `MongoDB` atlas cloud.
 
 ### Sign up
 
-User sign up with email and password credentials. Server validate if credentials match requirements. Email has to be email, password has to be in 6-20 characters range.<br/>
-If email has proper syntax, server logic check if user with provided email already exists.<br/>
+User sign up with email and password credentials. Server validate if credentials match requirements. Email has to be email, password has to be in 6-20 characters range.
+If email has proper syntax, server logic check if user with provided email already exists.
 If not user object is returned from the server.
 User is redirected to sign in page.
 
