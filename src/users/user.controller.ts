@@ -1,13 +1,6 @@
-import {
-  Controller,
-  Post,
-  Body,
-  ValidationPipe,
-  UseInterceptors,
-} from '@nestjs/common';
+import { Controller, Post, Body, ValidationPipe } from '@nestjs/common';
 import { UserService } from './user.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { TransformInterceptor } from './interceptors/transform.interceptor';
 
 @Controller('auth')
 export class UserController {
