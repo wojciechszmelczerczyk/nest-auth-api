@@ -49,6 +49,18 @@ You can play with API just import provided [Postman file](./auth-api.postman_col
 
 ## To run
 
+Clone repository.
+
+```sh
+git clone https://github.com/wojciechszmelczerczyk/nest-auth-api.git
+```
+
+Navigate to project directory.
+
+```sh
+cd ./nest-auth-api
+```
+
 Install dependencies.
 
 ```sh
