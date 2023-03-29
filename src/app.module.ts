@@ -1,7 +1,5 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { UserModule } from './users/user.module';
 import { ConfigModule } from '@nestjs/config';
 
@@ -11,7 +9,7 @@ import { ConfigModule } from '@nestjs/config';
     MongooseModule.forRoot(process.env.DB_URI),
     UserModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
