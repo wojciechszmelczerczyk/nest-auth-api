@@ -9,6 +9,7 @@ Simple REST API for user authentication.
 - [Techstack](#techstack)
 - [Prerequisities](#prerequisities)
 - [Architecture](#architecture)
+- [Authentication flow](#authentication-flow)
 - [Postman](#postman)
 - [Endpoints](#endpoints)
 - [To run](#to-run)
@@ -31,9 +32,35 @@ Application use `MongoDB` atlas cloud.
 
 <details>
 
-<summary>Example</summary>
+<summary>General arch</summary>
 
 <img src="./.github/img/app-arch.png">
+</details>
+
+## Authentication flow
+
+### Sign up
+
+User sign up with email and password credentials. Server validate if credentials match requirements. Email has to be email, password has to be in 6-20 characters range.<br/>
+If email has proper syntax, server logic check if user with provided email already exists.<br/>
+If not user object is returned from the server.
+User is redirected to sign in page.
+
+<details>
+<summary>Flow</summary>
+
+<img src="./.github/img/signup-flow.png"/>
+</details>
+
+### Sign in
+
+User sign in with email and password credentials. Server validate credentials same as in `/signup` route (email syntax check and password length). Beside of that, server check if user with provided email exists if so, after correct validation server response with jwt and user email.
+Token and email are stored in local storage, based on those values user can access homepage. If local storage is empty, user is being redirected to sign in page.
+
+<details>
+<summary>Flow</summary>
+
+<img src="./.github/img/signin-flow.png"/>
 </details>
 
 ## Postman
